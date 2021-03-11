@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <title>Image recognition(family Members)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    <center>
+    <h1 class="heading" style="font-weight: bold; font-variant: small-caps; color: rgb(7, 7, 80); font-family: jokerman;">Image recognition(family members)</h1>
+
+      <br><br>
+
+      <p style="font-size: 22px; color: rgb(0, 31, 117); font-weight: bold; background-color: white;" class="h2">Model is trained to identify the following objects: </p>
+      
+      <div style="background-color: rgba(250, 242, 250, 0.281);">
+      <b class="name_of_family_members" style="font-weight: bold; font-size: 18;">
+        Me(thanishka)
+        <hr>
+        Mother(preetha)
+        <hr>
+        Father(thulasiram)
+        <hr>
+        Brother(vallabh)
+        <hr>
+         </b>
+        </div>
+
+      <label style="font-size: 22px; color: black;">Webcam View - </label>
+      <div id="camera"></div>
+
+      <br><br>
+      <div id="result"></div>
+
+      <br><br>
+      <button class="btn-primary" onclick="takeSnapshot()">Capture Image</button>
+
+
+      <br><br>
+      <button class="btn-primary" onclick="check()">Identify Image</button>
+
+      <br><br>
+
+      <p style="font-size: 22px; color: darkcyan;">Object : <span id="result_object_name" style="font-size: 22px; color: darkcyan; font-weight: bold;"></span> </p>
+      <p style="font-size: 22px; color: darkcyan;">Accuracy :<span id="result_object_accuracy" style="font-size: 22px; color: darkcyan; font-weight: bold;"></span>  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
